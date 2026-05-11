@@ -1,0 +1,30 @@
+# =========================
+# ROS 2 (Colcon Workspace)
+# =========================
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# =========================
+# Python
+# =========================
+*.pyc
+__pycache__/
+
+# =========================
+# Rosbags (Dati registrati)
+# =========================
+ros2_ws/rosbags/*
+# Non ignorare però gli script Python o Bash che avete dentro rosbags/
+!ros2_ws/rosbags/*.txt
+
+# =========================
+# IDEs, OS, and Editors
+# =========================
+**/.DS_Store
+.project
+.cproject
+CMakeLists.txt.user
+*.user
+*~
+.#*
