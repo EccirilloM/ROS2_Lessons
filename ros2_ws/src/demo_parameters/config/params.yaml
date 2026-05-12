@@ -1,0 +1,6 @@
+# ros2_ws/src/demo_parameters/config/params.yaml
+# IL NOME DEL NODO DEVE ESSERE UGUALE A QUELLO DEFINITO NEL LAUNCH FILE
+wind_monitor_node:
+  ros__parameters:
+    max_wind_speed: 15.0
+    warning_message: "AMMAINARE LE VELE! Vento oltre il limite!"

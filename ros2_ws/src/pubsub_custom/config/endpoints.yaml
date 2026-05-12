@@ -1,0 +1,20 @@
+# ros2_ws/src/pubsub_custom/config/endpoints.yaml
+# AUTO: single source of truth per topic names + “wiring” per nodo.
+# Nota: i valori tipo "@imu_data" sono reference a "topics.<key>".
+
+meta:
+  generate:
+    cpp: true
+    python: false
+
+topics:
+  boat_status: "/boat/status"
+
+nodes:
+  status_publisher_node:
+    pub:
+      boat_status: "@boat_status"
+
+  status_subscriber_node:
+     sub:
+      boat_status: "@boat_status"

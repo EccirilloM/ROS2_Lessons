@@ -1,0 +1,21 @@
+# ros2_ws/src/demo_parameters/config/endpoints.yaml
+# AUTO: single source of truth per topic names + “wiring” per nodo.
+# Nota: i valori tipo "@imu_data" sono reference a "topics.<key>".
+
+meta:
+  generate:
+    cpp: true
+    python: false
+
+topics:
+  # ====== INPUT (sensori / sorgenti) ======
+  wind_speed: "/wind_speed"
+
+nodes:
+  wind_publisher_node:
+    pub:
+      wind_speed: "@wind_speed"
+  
+  wind_monitor_node:
+     sub:
+      wind_speed: "@wind_speed"

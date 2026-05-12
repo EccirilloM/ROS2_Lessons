@@ -6,9 +6,9 @@ set -e
 # =========================
 WS_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
-LAUNCH_PKG="poli_sail"
+LAUNCH_PKG="pubsub_custom"
 
-LAUNCH_FILE="live_poli_sail_system.launch.py"
+LAUNCH_FILE="custom_status.launch.py"
 
 
 
