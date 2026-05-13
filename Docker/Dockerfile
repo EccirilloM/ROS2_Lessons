@@ -41,7 +41,7 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> /home/${USERNAME}/.bashrc
 RUN echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> /home/${USERNAME}/.bashrc
 RUN echo "export _colcon_cd_root=/opt/ros/${ROS_DISTRO}/" >> /home/${USERNAME}/.bashrc
 RUN echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> /home/${USERNAME}/.bashrc
-RUN echo "source /home/${USERNAME}/ros2_ws/install/local_setup.bash" >> /home/${USERNAME}/.bashrc
+RUN echo "source /home/${USERNAME}/ros2_ws/install/setup.bash" >> /home/${USERNAME}/.bashrc
 RUN echo "cd /home/${USERNAME}/ros2_ws" >> /home/${USERNAME}/.bashrc
 
 # Set up entrypoint and default command
