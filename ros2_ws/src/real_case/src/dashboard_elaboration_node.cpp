@@ -8,7 +8,7 @@ using namespace std::chrono_literals;
 namespace real_case {
 
 DashboardElaborationNode::DashboardElaborationNode() : Node("dashboard_elaboration_node"),
-    wand_angle_porcessed_(0.0),
+    wand_angle_processed_(0.0),
     aws_calibrate_(0.0),
     ultrasound_calibrate_(0.0),
     roll_calibrate_(0.0),
