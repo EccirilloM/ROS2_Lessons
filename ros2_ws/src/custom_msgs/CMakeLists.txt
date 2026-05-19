@@ -12,6 +12,7 @@ find_package(std_msgs REQUIRED)
 # Genera le interfacce dal file .msg
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/BoatStatus.msg"
+  "msg/WindexDataMsg.msg"
   DEPENDENCIES std_msgs
 )
 

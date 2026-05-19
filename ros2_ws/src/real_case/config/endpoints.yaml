@@ -1,0 +1,42 @@
+# ros2_ws/src/real_case/config/endpoints.yaml
+# AUTO: single source of truth per topic names + “wiring” per nodo.
+# Nota: i valori tipo "@imu_data" sono reference a "topics.<key>".
+
+meta:
+  generate:
+    cpp: true
+    python: false
+
+topics:
+  imu_data: "/imu_data"
+  wand_angle: "/wand_angle"
+  windex_data: "/windex_data"
+  ultrasound_data: "/ultrasound_data" 
+
+  processed_imu_data: "/processed/imu_data"
+  processed_wand_angle: "/processed/wand_angle"
+  processed_windex_data: "/processed/windex_data"
+  processed_ultrasound_data: "/processed/ultrasound_data"
+
+  
+
+nodes:
+  central_node:
+    pub:
+      imu_data: "@imu_data"
+      wand_angle: "@wand_angle"
+      windex_data: "@windex_data"
+      ultrasound_data: "@ultrasound_data"
+
+  dashboard_elaboration_node:
+    sub:
+      imu_data: "@imu_data"
+      wand_angle: "@wand_angle"
+      windex_data: "@windex_data"
+      ultrasound_data: "@ultrasound_data"
+
+    pub:
+      processed_imu_data: "@processed_imu_data"
+      processed_wand_angle: "@processed_wand_angle"
+      processed_windex_data: "@processed_windex_data"
+      processed_ultrasound_data: "@processed_ultrasound_data"

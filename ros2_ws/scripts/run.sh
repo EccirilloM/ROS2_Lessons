@@ -6,9 +6,9 @@ set -e
 # =========================
 WS_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
-LAUNCH_PKG="pubsub_custom"
+LAUNCH_PKG="real_case"
 
-LAUNCH_FILE="custom_status.launch.py"
+LAUNCH_FILE="real_case.launch.py"
 
 
 
