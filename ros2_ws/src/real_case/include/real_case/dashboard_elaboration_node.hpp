@@ -17,7 +17,7 @@ public:
 private:
 
 //VARIABILI UTILIZZATE
-  double wand_angle_porcessed_;
+  double wand_angle_processed_;
   double aws_calibrate_;
   double awa_calibrate_;
   double ultrasound_calibrate_;
